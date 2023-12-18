@@ -1,0 +1,340 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Poppins", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark; */
+  /* background-color: #242424; */
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+} */
+
+body {
+  margin: 0;
+
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+button {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+.navBar {
+  padding: 25px 25px 25px 25px;
+  align-items: center;
+  gap: 722.5px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.navContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+}
+.navigation li {
+  display: inline-block; /* This will line your items horizontally */
+  margin-right: 20px; /* Adjust spacing between items */
+}
+.navigation li a:active {
+  font-weight: 800;
+}
+
+.mainText {
+  letter-spacing: 8.96;
+  line-height: 106%;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.buttonH1 {
+  display: flex;
+  font-weight: 300;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 80px;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+  border: 0px;
+}
+.buttonH1:hover {
+  background: #0edf16;
+  scale: 1.1;
+}
+.button2 {
+  border-radius: 180px;
+  background: linear-gradient(106deg, #008579 22.06%, #00ba63 77.94%);
+  color: white;
+}
+.phoneTilt {
+  position: absolute;
+  top: 0;
+  right: -250px;
+}
+
+.h2size {
+  color: #000;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.paragTwo {
+  max-width: 800px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.2px;
+}
+.thirdSection {
+  width: 100%;
+  border-radius: 60px;
+  background: #f4f4f4;
+}
+
+.phoneFrontBg {
+  border-radius: 190px;
+  padding: 3rem;
+  background: linear-gradient(106deg, #008579 22.06%, #00ba63 77.94%);
+}
+
+.s3ul li {
+  text-align: start;
+  margin: 10px 0;
+}
+
+.s3ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.s3ul li h3 {
+  color: #000;
+  font-family: Poppins;
+
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.s3ul li p {
+  color: #000;
+  font-family: Poppins;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.t4section {
+  background-color: #154f3b;
+}
+
+.h34 {
+  color: white;
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: 106%; /* 135.68px */
+  letter-spacing: 19.2px;
+  text-transform: uppercase;
+}
+.dot {
+  background-color: white;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.livelyList h4 {
+  text-transform: uppercase;
+}
+
+.button4 {
+  background-color: #204d3e; /* Replace with your button's color */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px; /* This gives the rounded corners */
+  box-shadow: 0 0 8px 8px #2eb414; /* Adjust the blur effect */
+  outline: none; /* Removes the outline to make it look cleaner */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.footerContainer {
+  background: url("./assets/footer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer {
+  min-height: 50vh;
+  background: linear-gradient(
+    180deg,
+    rgba(21, 79, 59, 0) 0%,
+    rgba(21, 79, 59, 0.21) 19.68%,
+    rgba(21, 79, 59, 0.68) 36.46%,
+    rgba(21, 79, 59, 0.94) 49.48%,
+    #154f3b 63.54%,
+    #154f3b 100%
+  );
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  .navigation {
+    display: none;
+  }
+  .mainText {
+    letter-spacing: 5.12px;
+    line-height: 106%;
+    font-weight: 800;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .button2 {
+    border-radius: 180px;
+    background: linear-gradient(106deg, #008579 22.06%, #00ba63 77.94%);
+    color: white;
+  }
+  .phoneTilt {
+    position: absolute;
+    top: 0;
+
+    right: -60px;
+  }
+
+  .h2size {
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .paragTwo {
+    max-width: 800px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+  }
+  .thirdSection {
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    background-color: white;
+  }
+  .mainContent {
+    background: #f4f4f4;
+    padding: 25px;
+    border-radius: 60px;
+    margin-top: 20px;
+  }
+  .phoneFrontBg {
+    border-radius: 190px;
+    background: linear-gradient(106deg, #008579 22.06%, #00ba63 77.94%);
+  }
+
+  .h34 {
+    color: white;
+
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%; /* 135.68px */
+    letter-spacing: 19.2px;
+    text-transform: uppercase;
+  }
+}
+
+#check:checked ~ .fullTab {
+  transform: translateX(0);
+}
+
+.footerHeader {
+  color: #d4a46b;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.96px;
+}
+
+.contactHeader {
+  background: linear-gradient(106deg, #008579 22.06%, #00ba63 77.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.submitButton {
+  border-radius: 13.935px;
+  background: linear-gradient(106deg, #008579 22.06%, #00ba63 77.94%);
+}
+
+.navGreenActive {
+  background: linear-gradient(106deg, #008579 22.06%, #00ba63 77.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
