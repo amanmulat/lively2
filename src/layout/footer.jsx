@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import icon from "/assets/icon.svg";
+import icon from "../../public/assets/icon.svg";
 import icon1 from "/assets/icon-1.svg";
 import icon2 from "/assets/icon-2.svg";
 import icon3 from "/assets/icon-3.svg";
