@@ -1,13 +1,13 @@
 import { enqueueSnackbar } from "notistack";
-import menu from "../../public/assets/Menu.svg";
-import close from "../../public/assets/close.svg";
-import downloadIcon from "../../public/assets/downloadIcon.svg";
-import inflated from "../../public/assets/inflated.png";
-import logo from "../../public/assets/logo.svg";
-import logo3 from "../../public/assets/logo3.svg";
-import phoneFlat2 from "../../public/assets/phoneFlat2.png";
-import phoneFront from "../../public/assets/phoneFront.png";
-import phoneTilt from "../../public/assets/phoneTilt.png";
+import menu from "../assets/Menu.svg";
+import close from "../assets/close.svg";
+import downloadIcon from "../assets/downloadIcon.svg";
+import inflated from "../assets/inflated.png";
+import { logo } from "../assets/logo.svg";
+import logo3 from "../assets/logo3.svg";
+import phoneFlat2 from "../assets/phoneFlat2.png";
+import phoneFront from "../assets/phoneFront.png";
+import phoneTilt from "../assets/phoneTilt.png";
 
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
