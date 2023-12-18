@@ -1,11 +1,11 @@
 import { NavLink, Outlet } from "react-router-dom";
-import icon from "../assets/icon.svg";
-import icon1 from "../assets/icon-1.svg";
-import icon2 from "../assets/icon-2.svg";
-import icon3 from "../assets/icon-3.svg";
-import icon4 from "../assets/icon-4.svg";
-import logo2 from "../assets/logo2.svg";
-import downloadIcon from "../assets/downloadIcon.svg";
+import icon from "../assets/Images/icon.svg";
+import icon1 from "../assets/Images/icon-1.svg";
+import icon2 from "../assets/Images/icon-2.svg";
+import icon3 from "../assets/Images/icon-3.svg";
+import icon4 from "../assets/Images/icon-4.svg";
+import logo2 from "../assets/Images/logo2.svg";
+import downloadIcon from "../assets/Images/downloadIcon.svg";
 import { enqueueSnackbar } from "notistack";
 
 const Footer = () => {
